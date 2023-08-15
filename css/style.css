@@ -1,0 +1,159 @@
+body {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  background: hsla(225, 45%, 12%, 1);
+  background: linear-gradient(360deg, hsla(225, 45%, 12%, 1) 0%, hsla(226, 40%, 21%, 1) 50%, hsla(224, 35%, 27%, 1) 99%);  
+  background: -moz-linear-gradient(360deg, hsla(225, 45%, 12%, 1) 0%, hsla(226, 40%, 21%, 1) 50%, hsla(224, 35%, 27%, 1) 99%);  
+  background: -webkit-linear-gradient(360deg, hsla(225, 45%, 12%, 1) 0%, hsla(226, 40%, 21%, 1) 50%, hsla(224, 35%, 27%, 1) 99%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#11182D", endColorstr="#202A4B", GradientType=1 );
+}
+
+@media (min-width: 1400px){
+  .container{
+    max-width: 1170px;
+  }
+}
+
+/* Navbar Starts */
+.navbar {
+  background-image: url("../img/svgUP.png");
+}
+
+.navbar .navbar-brand img{
+  width: 60px;
+  height: 60px;
+}
+
+.navbar ul li .nav-link {
+  font-size: 14px;
+  color: #fff;
+  transition: color 0.4s;
+}
+
+.navbar ul li .nav-link:hover {
+  color: #009ad8;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: #009ad8;
+}
+
+.navbar-toggler {
+  color: #009ad8;
+  border-color: #009ad8;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 992px) {
+  .navbar .navbar-collapse ul {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+/* Navbar Ends */
+/* Landing Starts */
+.form-control {
+  background-color: transparent;
+  border: none;
+}
+
+.form-control::placeholder {
+  color: rgba(255,255,255,.5);
+}
+
+.card {
+  background: hsla(228, 36%, 27%, 1);
+  background: linear-gradient(90deg, hsla(228, 36%, 27%, 1) 0%, hsla(226, 35%, 32%, 1) 50%, hsla(224, 36%, 34%, 1) 99%);
+  background: -moz-linear-gradient(90deg, hsla(228, 36%, 27%, 1) 0%, hsla(226, 35%, 32%, 1) 50%, hsla(224, 36%, 34%, 1) 99%);
+  background: -webkit-linear-gradient(90deg, hsla(228, 36%, 27%, 1) 0%, hsla(226, 35%, 32%, 1) 50%, hsla(224, 36%, 34%, 1) 99%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2C365E", endColorstr="#35436F", GradientType=1 );
+}
+
+.card-header {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #596DAB;
+}
+
+#todayLoc {
+  font-size: 1.2857142857em;
+  color: #fff;
+
+}
+
+.num {
+  font-size: 90px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.custom {
+  color: #009ad8;
+  margin: 20px 0;
+}
+
+.forecast {
+  color: #fff;
+}
+/* Landing Ends */
+/* Footer Starts */
+footer {
+  background-image: url("../img/svgDown.png");
+  padding-block: 50px;
+}
+
+.subscribe-form {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.subscribe-form input[type="text"] {
+  padding: 20px 100px 20px 20px;
+  background: #1e202b;
+  width: 100%;
+  color: white;
+}
+
+form input {
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.subscribe-form input[type="submit"] {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+}
+
+form input[type="submit"] {
+  border: none;
+  background: #009ad8;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  color: #009ad8;
+  text-align: center;
+  line-height: 2;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  font-size: 20px;
+  font-size: 1.4285714286em;
+}
+/* Footer Ends */

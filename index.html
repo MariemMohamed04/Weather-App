@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App - Home</title>
+  <!-- Favicon -->
+  <link rel="icon" href="./img/casual-life-3d-rain-cloud-1.png" type="image/png">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- Navbar Starts -->
+  <nav class="navbar navbar-expand-lg py-3">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./img/casual-life-3d-rain-cloud-1.png" alt="blue-cloud-logo">
+          <span class="text-white-50">Weather App</span>
+        </a>    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active me-4" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-4" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-4" href="#">Live Cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-4" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-4" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar Ends -->
+  <div style="height: 150px; overflow: hidden;">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; transform: scaleX(-1);">
+      <defs>
+        <linearGradient id="gradient" x1="1%" y1="38%" x2="99%" y2="62%"><stop offset="5%" stop-color="#11182d"></stop><stop offset="95%" stop-color="#202a4b"></stop></linearGradient>
+      </defs>
+      <path d="M-0.00,49.98 C120.87,120.98 300.60,-49.98 500.00,49.98 L502.75,-4.01 L-0.00,-0.00 Z"
+        style="stroke: none; fill: url(#gradient)"></path>
+    </svg>
+  </div>
+  <!-- Landing Starts -->
+  <section class="landing">
+    <div class="container">
+      <!-- Form Section -->
+      <form class="find-location d-flex justify-content-center p-2 mb-5 border border-1 border-white rounded-pill">
+        <input type="text" placeholder="Find Your Location..." id="search" class="me-auto form-control">
+      </form>
+      <div class="row g-0">
+        <!-- Today Section -->
+        <div class="col-lg-4">
+          <div class="card" style="height: 20rem;">
+            <div class="card-header d-flex">
+              <span id="todayName">Friday</span>
+              <span class="ms-auto" id="todayDate">18</span>&nbsp;
+              <span id="todayMonth">April</span>
+            </div>
+            <div class="p-3">
+              <span id="todayLoc">Cairo</span>
+              <div class="degree d-flex">              
+                <div class="num"><span id="todayDeg">26</span><sup>o</sup>C</div>
+                <div class="forecast-icon">
+                  <img src="./img/moon.png" id="todayImg" alt="" width="90">
+                </div>
+              </div>
+              <span class="custom d-inline-block mb-2" id="todayCond">Clear</span>
+              <div class="forecast d-flex gap-5">
+                <div>
+                  <img src="./img/icon-umberella.png" alt="">
+                  <span id="todayHumidity">20</span>%
+                </div>
+                <div>
+                  <img src="./img/icon-wind.png" alt="">
+                  <span id="todayWind">18</span>km/h
+                </div>
+                <div>
+                  <img src="./img/icon-compass.png" alt="">
+                  <span id="todayDir">East</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tomorrow Section -->
+        <div class="col-lg-4">
+          <div class="card text-center" style="height: 20rem;">
+            <div class="card-header">
+              <span class="tmrwName">Wednesday</span>
+            </div>
+            <div class="mt-5">
+              <div class="card-icon">
+                <img src="./img/113.png" class="tmrwImg" alt="">
+              </div>
+              <div class="degree text-white fs-4 fw-bold"><span class="tmrwMaxDeg">39.3</span><sup>o</sup>C</div>
+              <div class="text-white-50"><span class="tmrwMinDeg">24.6</span><sup>o</sup></div>
+              <div class="custom tmrwCond">Sunny</div>
+            </div>
+          </div>
+        </div>
+        <!-- Day after Tomorrow -->
+        <div class="col-lg-4">
+          <div class="card text-center" style="height: 20rem;">
+            <div class="card-header">
+              <span class="tmrwName">Wednesday</span>
+            </div>
+            <div class="mt-5">
+              <div class="card-icon">
+                <img src="./img/113.png" class="tmrwImg" alt="">
+              </div>
+              <div class="degree text-white fs-4 fw-bold"><span class="tmrwMaxDeg">39.3</span><sup>o</sup>C</div>
+              <div class="text-white-50"><span class="tmrwMinDeg">24.6</span><sup>o</sup></div>
+              <div class="custom tmrwCond">Sunny</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Landing Ends -->
+  <div style="height: 150px; overflow: hidden;">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; transform: rotate(180deg);">
+      <defs>
+        <linearGradient id="gradient" x1="1%" y1="38%" x2="99%" y2="62%"><stop offset="5%" stop-color="#11182d"></stop><stop offset="95%" stop-color="#202a4b"></stop></linearGradient>
+      </defs>
+      <path d="M-0.00,49.98 C120.87,120.98 300.60,-49.98 500.00,49.98 L502.75,-4.01 L-0.00,-0.00 Z"
+        style="stroke: none; fill: url(#gradient)"></path>
+    </svg>
+  </div>
+  <!-- Footer Starts -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <form action="#" class="subscribe-form">
+            <input type="text" placeholder="Enter your email to subscribe...">
+            <input type="submit" value="Subscribe">
+          </form>
+        </div>
+        <div class="col-lg-3 col-md-offset-1">
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </footer>
+  <!-- <footer>
+    <div class="container">
+      <div class="row">
+        .col
+      </div>
+    </div>
+  </footer> -->
+  <!-- Footer Ends -->
+  <!-- JS File -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
